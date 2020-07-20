@@ -3,32 +3,6 @@ import TodoListContainer from '../containers/TodoList';
 import NewTodoContainer from '../containers/NewTodo';
 
 export class Todo extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showNewTodo: false,
-      title: '',
-      text: '',
-      todos: [
-        {
-          id: 1,
-          title: 'Create Part 1',
-          text: 'Starting with project setup'
-        },
-        {
-          id: 2,
-          title: 'Create Part 2',
-          text: 'creating the UI with components and containers'
-        },
-        {
-          id: 3,
-          title: 'Create Part 3',
-          text: 'To be decided'
-        }
-      ],
-    };
-  }
-
   toggleNewTodo() {
     this.setState({
       showNewTodo: !this.state.showNewTodo
