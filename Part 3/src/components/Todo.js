@@ -17,7 +17,7 @@ export class Todo extends Component {
   }
 
   static propTypes = {
-    todos: PropTypes.array,
+    todos: PropTypes.array.isRequired,
     addTodo: PropTypes.func.isRequired,
     deleteTodo: PropTypes.func.isRequired,
   };
@@ -45,7 +45,6 @@ export class Todo extends Component {
   }
 
   render() {
-    console.log(this.state);
     const { showNewTodo } = this.state;
     return (
       <Fragment>
